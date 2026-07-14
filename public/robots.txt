@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Allow: /listing/
+Allow: /seller/
+Allow: /leaderboard
+Allow: /marketplace
+Allow: /about
+Allow: /contact
+Allow: /help
+Allow: /terms
+
+# Auth-gated app sections — a crawler can't sign in, so these just hit a
+# login wall. No SEO value in indexing them, and disallowing keeps crawl
+# budget on the public pages above.
+Disallow: /settings
+Disallow: /myprofile
+Disallow: /profile
+Disallow: /messages
+Disallow: /aiagent
+Disallow: /sell
+Disallow: /sellers
+
+Sitemap: https://siterifty.com/sitemap.xml
